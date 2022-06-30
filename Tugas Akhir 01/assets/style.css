@@ -83,17 +83,13 @@ main{
 .container{
     display: flex;
     box-sizing: border-box;
-    height: fit-content;
-}
-
-.diff{
-    height: 800px;
+    height: 250px;
 }
 
 .content{
     flex-basis: 100%;
     margin: 10px;
-    padding: 10px;
+    overflow: auto;
 }
 /* Container Pertama */
 .title{
@@ -117,12 +113,17 @@ main{
 }
 
 /* Container Kedua */
+
+#list{
+    height: 800px;
+}
+
 .flex{
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 700px;
-    margin: 10px auto;
+    height: 90%;
+    margin: 0 auto;
 }
 
 .flex-container{
@@ -130,12 +131,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .showcard{
     flex-basis: 30%;
     margin: 10px;
-    height: 300px;
+    height: 100%;
     border-radius: 10px;
     background-color: #3d4657 ;
 }
@@ -150,11 +152,27 @@ main{
 .showcard img{
     display: block;
     width: 70%;
-    height: 100px;
+    height: 200px;
     object-fit: cover;
     margin: 10px auto;
     border: 1px solid white;
 }
+
+/* Container Ketiga */
+#about{
+    height: 500px;
+    padding: 10px;
+}
+
+#about article{
+    flex-basis: 80%;
+    margin-right: 10px;
+}
+
+aside{
+    flex-basis: 20%;
+    margin-left: 10px;
+}   
 
 /* Footer */
 footer{
@@ -170,6 +188,7 @@ footer p{
     color: white;
 }
 
+/* Additional */
 .card{
     background-color: #0e1527;
     border-radius: 10px;
