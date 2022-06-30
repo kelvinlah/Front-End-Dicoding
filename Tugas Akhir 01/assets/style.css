@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Nunito;
+}
+
+/* Header */
+.jumbotron{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-image: url(/assets/images/fruits.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 8px solid salmon;
+}
+
+.jumbotron h1{
+    color: #ffffff;
+    font-size: 124px;
+    background-color: #3EC1D3;
+    padding: 0 50px;
+    border-radius: 100px;
+}
+
+/* Navigation */
+nav{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: #3EC1D3;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    width: 500px;
+}
+
+nav ul a{
+    flex-basis: 25%;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+nav ul a li{
+    list-style-type: none;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+nav ul a:hover{
+    background-color: #FF9A00;
+}
+
+/* Main */
+main{
+    width: 100%;
+    height: 800px;
+    padding: 10px 10px;
+}
+
+.container{
+    width: 100%;
+    height: 500px;
+   
+}
+
+.contents{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 5px;
+}
+
+.content article{
+    width: 78%;
+    height: 250px;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 5px;
+    float: left;
+}
+
+.content article header h2{
+    color: #3EC1D3;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+article p{
+    margin-top: 10px;
+    text-indent: 32px;
+    text-align: justify;
+}
+
+/* Aside */
+aside{
+    width: 20%;
+    height: 250px;
+    float: right;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+}
+
+aside header{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+aside img{
+    display: block;
+    width: 60%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0px;
+    margin: 10px auto;
+    border: 2px solid black;
+}
+
+
+
+table{
+
+    margin: auto;
+    width: 70%;
+}
+
+
+th{
+    text-align: left;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #3EC1D3;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+}
