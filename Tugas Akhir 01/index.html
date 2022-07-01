@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monster</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#list"><li>List</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="#about"><li>About</li></a>
+        </ul>
+    </nav>
     <header>
         <div class="jumbotron">
             <h1>MONSTER</h1>
             <h4>Legendary Creature</h4>
         </div>
-        <nav>
-            <ul>
-                <a href="#"><li>Beranda</li></a>
-                <a href="#list"><li>List</li></a>
-                <a href="#"><li>Kontak</li></a>
-                <a href="#"><li>Tentang</li></a>
-            </ul>
-        </nav>
     </header>
 
     <main>
@@ -36,7 +35,7 @@
         <div id="list" class="container">
             <div class="content card">
                 <header class="title">
-                    <p class="text-white">List</p>
+                    <p class="text-white">LIST</p>
                 </header>
 
                 <div class="flex">
@@ -45,18 +44,22 @@
                             <header>
                                 Kraken
                             </header>
-                            <img src="./assets/images/kraken.jpg" alt="kraken">
+                            <img src="./assets/images/creatures/kraken.jpg" alt="kraken">
+                            <p><a class="text-white" href="#">View Details</a></p>
                         </div>
                         <div class="showcard">
                             <header>
                                 Griffin
                             </header>
-                            <img src="./assets/images/griffin.jpg" alt="grffin">
+                            <img src="./assets/images/creatures/griffin.jpg" alt="grffin">
+                            <p><a class="text-white" href="#">View Details</a></p>
                         </div>
                         <div class="showcard">
                             <header>
                                 Manticore
                             </header>
+                            <img src="./assets/images/creatures/manticore.jpg" alt="manticore">
+                            <p><a class="text-white" href="#">View Details</a></p>
                         </div>
                     </div>
 
@@ -65,29 +68,73 @@
                             <header>
                                 Minotaur
                             </header>
+                            <img src="./assets/images/creatures/minotaur.jpg" alt="minotaur">
+                            <p><a class="text-white" href="#">View Details</a></p>
                         </div>
                         <div class="showcard">
                             <header>
                                 Dragon
                             </header>
+                            <img src="./assets/images/creatures/dragon.jpg" alt="dragon">
+                            <p><a class="text-white" href="#">View Details</a></p>
                         </div>
                         <div class="showcard">
                             <header>
-                                Unicorn
+                                Cerberus
                             </header>
+                            <img src="./assets/images/creatures/cerberus.png" alt="cerberus">
+                            <p><a class="text-white" href="#">View Details</a></p>
                         </div>
                     </div>
                 </div>
+                <p class="button"><a class="text-white" href="#">View More</a></p>
             </div>
-
         </div>
 
         <div id="about" class="container">
-            <article class="card">
+            <div class="left">
+                <article class="up card">
+                    <header class="title text-white">
+                        <p>About</p>
+                    </header>
+                    <p class="text text-white">This website is created for the sole purpose of enjoyment. All content on this website is not mine. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum eveniet sequi magnam architecto? Aperiam nulla quam quisquam rerum quibusdam repellendus nam itaque labore aut autem. Facere eos repellendus nemo unde?</p>
+                </article>
+                <article class="bottom card">
+                    <header class="title text-white">
+                        <p>Contact</p>
+                        <h6>Any Advice? You can contact me via the media below</h6>
+                    </header>
+                    <div>
+                        <p class="whatsapp svg text-white">+6281234567890</p>
+                        <p class="email svg text-white">user.email@gmail.com</p>
+                        <p class="instagram svg text-white">user_name</p>
+                    </div>
+                </article>
+            </div>
 
-            </article>
             <aside class="card">
-
+                <header>
+                    <p class="text-white">Arranged by</p>
+                </header>
+                <img src="./assets/images/cat.jpg" alt="cat">
+                <table class="text-white">
+                    <tr>
+                        <th>Name</th>
+                        <td>Meowu</td>
+                    </tr>
+                    <tr>
+                        <th>Town of Origin</th>
+                        <td>Batam City</td>
+                    </tr>
+                    <tr>
+                        <th>Year of Birth</th>
+                        <td>2003</td>
+                    </tr>
+                    <tr>
+                        <th>Hobby</th>
+                        <td>Watching</td>
+                    </tr>
+                </table>
             </aside>
         </div>
     </main>
