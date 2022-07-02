@@ -244,13 +244,14 @@ main{
 /* Aside */
 aside{
     flex-basis: 20%;
-    display: block;
     margin-left: 5px;
+    align-items: center;
+    padding-bottom: 30px;
 }
 
 aside header{
     width: fit-content;
-    margin: 20px auto;
+    margin-top: 20px;
 }
 
 aside img{
@@ -258,12 +259,11 @@ aside img{
     width: 60%;
     height: 180px;
     object-fit: cover;
-    margin: auto;
     border: 1px solid white;
+    margin: 35px 0;
 }
 
 aside table{
-    margin: 25px auto;
     display: flex;
     width: 50%;
     height: fit-content;
@@ -360,4 +360,8 @@ footer p{
 
 .hidden{
     display: none;
+}
+
+.para{
+    font-size: larger;
 }
