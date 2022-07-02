@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-    <nav>
+    <nav class="center">
         <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#list"><li>List</li></a>
-            <a href="#contact"><li>Contact</li></a>
-            <a href="#about"><li>About</li></a>
+            <a class="radius-10" href="#"><li>Home</li></a>
+            <a class="radius-10" href="#list"><li>List</li></a>
+            <a class="radius-10" href="#contact"><li>Contact</li></a>
+            <a class="radius-10" href="#about"><li>About</li></a>
         </ul>
     </nav>
     <header>
-        <div class="jumbotron">
+        <div class="jumbotron center flex-col">
             <h1>MONSTER</h1>
         </div>
     </header>
 
-    <main>
+    <main class="flex-col">
         <div class="container">
-            <article class=" content card">
+            <article style="padding-bottom: 50px;" class=" content card">
                 <header class="title">
                     <p class="text-white">Legendary Creature</p>
                 </header>
@@ -39,61 +39,110 @@
                     <p class="text-white">LIST</p>
                 </header>
 
-                <div class="flex">
-                    <div class="flex-container">
+                <div class="flex-col flex">
+                    <div class="flex-container center">
                         <div class="showcard">
                             <header>
                                 Kraken
                             </header>
-                            <img src="./assets/images/creatures/kraken.jpg" alt="kraken">
-                            <p><a class="text-white" href="#">View Details</a></p>
+                            <img class="radius-10" src="./assets/images/creatures/kraken.jpg" alt="kraken">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
                         </div>
                         <div class="showcard">
                             <header>
                                 Griffin
                             </header>
-                            <img src="./assets/images/creatures/griffin.jpg" alt="grffin">
-                            <p><a class="text-white" href="#">View Details</a></p>
+                            <img class="radius-10" src="./assets/images/creatures/griffin.jpg" alt="grffin">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
                         </div>
                         <div class="showcard">
                             <header>
                                 Manticore
                             </header>
-                            <img src="./assets/images/creatures/manticore.jpg" alt="manticore">
-                            <p><a class="text-white" href="#">View Details</a></p>
+                            <img class="radius-10" src="./assets/images/creatures/manticore.jpg" alt="manticore">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
                         </div>
                     </div>
 
-                    <div class="flex-container">
+                    <div class="flex-container center">
                         <div class="showcard">
                             <header>
                                 Minotaur
                             </header>
-                            <img src="./assets/images/creatures/minotaur.jpg" alt="minotaur">
-                            <p><a class="text-white" href="#">View Details</a></p>
+                            <img class="radius-10" src="./assets/images/creatures/minotaur.jpg" alt="minotaur">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
                         </div>
                         <div class="showcard">
                             <header>
                                 Dragon
                             </header>
-                            <img src="./assets/images/creatures/dragon.jpg" alt="dragon">
-                            <p><a class="text-white" href="#">View Details</a></p>
+                            <img class="radius-10" src="./assets/images/creatures/dragon.jpg" alt="dragon">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
                         </div>
                         <div class="showcard">
                             <header>
                                 Cerberus
                             </header>
-                            <img src="./assets/images/creatures/cerberus.png" alt="cerberus">
-                            <p><a class="text-white" href="#">View Details</a></p>
+                            <img class="radius-10" src="./assets/images/creatures/cerberus.png" alt="cerberus">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
                         </div>
                     </div>
+
+                    <div class="hidden flex-container center">
+                        <div class="showcard">
+                            <header>
+                                Fenrir
+                            </header>
+                            <img class="radius-10" src="./assets/images/creatures/fenrir.jpg" alt="kraken">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
+                        </div>
+                        <div class="showcard">
+                            <header>
+                                Phoenix
+                            </header>
+                            <img class="radius-10" src="./assets/images/creatures/phoenix.jpg" alt="grffin">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
+                        </div>
+                        <div class="showcard">
+                            <header>
+                                Unicorn
+                            </header>
+                            <img class="radius-10" src="./assets/images/creatures/unicorn.jpg" alt="manticore">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
+                        </div>
+                    </div>
+
+                    <div class="hidden flex-container center">
+                        <div class="showcard">
+                            <header>
+                                Hydra
+                            </header>
+                            <img class="radius-10" src="./assets/images/creatures/hydra.jpg" alt="kraken">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
+                        </div>
+                        <div class="showcard">
+                            <header>
+                                Basilisk
+                            </header>
+                            <img class="radius-10" src="./assets/images/creatures/basilisk.png" alt="grffin">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
+                        </div>
+                        <div class="showcard">
+                            <header>
+                                Golem
+                            </header>
+                            <img class="radius-10" src="./assets/images/creatures/golem.jpg" alt="manticore">
+                            <p class="radius-10"><a class="text-white" href="#">Details</a></p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="button"><a class="text-white" href="#">View More</a></div>
+                <div class="button"><button class="text-white js">View More</button></div>
             </div>
         </div>
 
         <div class="third container">
-            <div class="left">
+            <div class="left flex-col">
                 <article id="about" class="up card">
                     <header class="title text-white">
                         <p>About</p>
@@ -106,9 +155,9 @@
                         <h6>Any Advice? You can contact me via the media below</h6>
                     </header>
                     <div>
-                        <p class="whatsapp svg text-white">+6281234567890</p>
-                        <p class="email svg text-white">user.email@gmail.com</p>
-                        <p class="instagram svg text-white">user_name</p>
+                        <p class="center whatsapp svg text-white">+6281234567890</p>
+                        <p class="center email svg text-white">user.email@gmail.com</p>
+                        <p class="center instagram svg text-white">user_name</p>
                     </div>
                 </article>
             </div>
@@ -117,30 +166,45 @@
                 <header>
                     <p class="text-white">Arranged by</p>
                 </header>
-                <img src="./assets/images/cat.jpg" alt="cat">
-                <table class="text-white">
+                <img class="radius-10" src="./assets/images/cat.jpg" alt="cat">
+                <table class="text-white center">
                     <tr>
-                        <th>Name</th>
-                        <td>Meowu</td>
+                        <th>Name :</th>
                     </tr>
                     <tr>
-                        <th>Town of Origin</th>
+                        <td>Kelvin</td>
+                    </tr>
+                    <tr>
+                        <th>Town of Origin :</th>
+                    </tr>
+                    <tr>
                         <td>Batam City</td>
                     </tr>
                     <tr>
-                        <th>Year of Birth</th>
+                        <th>Year of Birth :</th>
+                    </tr>
+                    <tr>
                         <td>2003</td>
                     </tr>
                     <tr>
-                        <th>Hobby</th>
+                        <th>Hobby :</th>
+                    </tr>
+                    <tr>
                         <td>Watching</td>
+                    </tr>
+                    <tr>
+                        <th>Weakness :</th>
+                    </tr>
+                    <tr>
+                        <td>Nothing</td>
                     </tr>
                 </table>
             </aside>
         </div>
     </main>
-    <footer>
-        <p>Belajar Pemgrograman &copy; 2022, Kelvin</p>
+    <footer class="center">
+        <p>Monster &copy; 2022, Kelvin</p>
     </footer>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
