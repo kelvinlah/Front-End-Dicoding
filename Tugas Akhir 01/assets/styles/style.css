@@ -44,18 +44,7 @@ nav ul a li{
     color: white;
     font-size: 22px;
     text-align: center;
-    line-height: 50px;   
-    border-left: 1px solid #223443;
-    border-right: 1px solid #223443;
-    border-collapse: collapse;
-}
-
-.left-end{
-    border-left: none;
-}
-
-.right-end{
-    border-right: none;
+    line-height: 50px;
 }
 
 nav ul a:hover{
@@ -344,6 +333,10 @@ footer p{
         flex-basis: 100%;
         margin: 0;
         margin-bottom: 10px;
+    }
+
+    .bottom{
+        margin-top: 10px;
     }
 
     .left{
