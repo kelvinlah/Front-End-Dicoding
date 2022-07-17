@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Oswald;
+}
+
+.app-title {
+    background-color: dodgerblue;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-family: 'Pacifico';
+    font-size: 30px;
+}
+
+/* Main */
+main{
+    height: fit-content;
+}
+
+.container {
+    min-height: 90px;
+    max-height: fit-content;
+    width: 80%;
+    margin: 2em auto;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-content {
+    width: fit-content;
+    font-size: 25px;
+}
+
+/* Cari */
+.book-list-container {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#search-input {
+    display: block;
+    width: 90%;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#search-input:focus{
+    outline: none;
+}
+
+.search-button {
+    background-image: url(/assets/images/search-button.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    padding: 12px;
+    border-radius: 5px;
+    width: 10%;
+    border: none;
+}
+
+/* Search Result */
+.search-result{
+    padding: 10px;
+}
+
+.empty > p{
+    width: fit-content;
+    margin: 5px auto;
+    color: grey;
+    font-family: Arial;
+    font-size: small;
+}
+
+/* Add Book*/
+
+
+.add-book > button{
+    display: block;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Form */
+.form-container{
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    height: 500px;
+}
+
+form{
+    border: 1px solid black;
+}
+
+
+/* Footer */
+/* Additional */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px;
+}
