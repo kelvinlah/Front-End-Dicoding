@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Oswald;
+}
+
+.app-title {
+    background-color: #2C3639;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-family: 'Pacifico';
+    font-size: 30px;
+}
+
+/* Main */
+main {
+    height: fit-content;
+}
+
+.container {
+    min-height: 90px;
+    max-height: fit-content;
+    width: 80%;
+    margin: 2em auto;
+    padding: 20px 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>header {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+/* Cari */
+.book-search {
+    width: 100%;
+    border: 3px solid #3F4E4F;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.book-list-container {
+    width: 100%;
+    padding: 10px;
+    min-height: fit-content;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#search-input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+}
+
+#search-input:focus {
+    outline: none; 
+}
+
+.search>button {
+    background-image: url(/assets/images/search-button.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #DCD7C9;
+}
+
+.search>button:hover {
+    background-image: url(/assets/images/search-button-hover.png);
+    background-color: #2C3639;
+}
+
+/* Search Result and Book List*/
+.shelf {
+    display: flex;
+}
+
+.shelf > .wrapper{
+    flex-basis: 25%;
+    padding: 5px;
+}
+
+.shelf > .wrapper > .book-container {
+    width: 100%;
+    padding: 10px;
+    min-height: 160px;
+}
+
+.shelf > .wrapper > .book-container > h2 {
+    font-family: Nunito;
+    font-weight: bolder;
+    max-width: 100%;
+    height: fit-content;
+}
+
+.book-author{
+    font-style: italic;
+}
+
+.empty>p {
+    width: fit-content;
+    margin: 5px auto;
+    color: grey;
+    font-family: Arial;
+    font-size: small;
+    text-align: center;
+}
+
+.read-button {
+    display: block;
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #DCD7C9;
+    font-weight: 700;
+}
+
+.read-button:hover {
+    background-color: #2C3639;
+    color: white;
+}
+
+/* Add Book*/
+.add-book {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.add-book>button {
+    display: block;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #DCD7C9;
+    font-weight: bold;
+}
+
+.add-book>button:hover {
+    background-color: #2C3639;
+    color: white;
+}
+
+/* Form */
+form > .close > .dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(/assets/images/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+form > .close > .dot:hover{
+    background-color: #c7c2b6;
+}
+
+form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #DCD7C9;
+    border-radius: 20px;
+    height: fit-content;
+    width: 30%;
+    padding: 10px;
+}
+
+form > header{
+    text-align: center;
+}
+
+form > .input-section > input {
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin: 10px auto;
+    padding: 20px 10px;
+    background-color: #DCD7C9;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid grey;
+}
+
+form > .input-section > input:focus{
+    outline: 2px solid #2C3639;
+}
+
+form > .add-button{
+    margin: 5px;
+}
+
+form > .add-button > .input-button {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #3F4E4F;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+form > .add-button > .input-button:hover {
+    background-color: #A27B5C;
+}
+
+
+/* Footer */
+/* Additional */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px;
+}

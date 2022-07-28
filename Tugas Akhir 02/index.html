@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="app-title">BookShelf Apps</h1>
+    </header>
+
+    <main>
+        <div class="container card">
+            <header>
+                <h3>Daftar Buku</h1>
+            </header>
+
+            <div class="book-search">
+                <div class="search">
+                    <input type="text" placeholder="Cari Judul Buku" id="search-input">
+                    <button title="Search"></button>
+                </div>
+            </div>
+
+            <div class="book-list-container" id="book-list-container">
+                <div class="empty" id="empty">
+                    <p>Tidak ada buku yang ditambahkan</p>
+                </div>
+            </div>
+
+            <div class="add-book">
+                <form action="#" id="form" hidden>
+                    <div class="close">
+                        <div class="dot" title="Close" id="close-button"></div>
+                    </div>
+
+                    <header>
+                        <h2>Tambah Buku Baru</h3>
+                    </header>
+
+                    <div class="input-section">
+                        <input class="form-input" type="text" id="book-title" placeholder="Judul Buku"
+                            autocomplete="off" required>
+                        <input class="form-input" type="text" id="book-author" placeholder="Nama Penulis"
+                            autocomplete="off" required>
+                        <input class="form-input" type="text" id="year-release" placeholder="Tahun Rilis"
+                            autocomplete="off" required>
+                    </div>
+
+                    <div class="add-button">
+                        <input class="input-button" type="submit" value="Tambahkan">
+                    </div>
+                </form>
+
+                <button id="add">Tambah Buku</button>
+            </div>
+        </div>
+
+        <div class="container card">
+            <header>
+                <h3>Sedang Dibaca</h3>
+            </header>
+
+            <div class="reading-book">
+
+            </div>
+        </div>
+
+        <div class="container card">
+            <header>
+                <h3>Selesai Dibaca</h3>
+            </header>
+
+            <div class="book-had-read">
+
+            </div>
+        </div>
+
+    </main>
+    <script src="./assets/script/script.js"></script>
+    <script src="./assets/script/render.js"></script>
+    <script src="./assets/script/main.js"></script>
+</body>
+
+</html>
